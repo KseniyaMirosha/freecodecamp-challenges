@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: url("assets/main-bg.jpg") no-repeat;
+  background-size: cover;
+}
+main {
+  padding: 5% 20%;
+  background-color: rgb(61 50 111 / 83%);
+  height: 100%;
+}
+h1 {
+  color: #f3f3f3;
+  font-weight: 400;
+  line-height: 1.2;
+}
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+header p {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+  color: #f3f3f3;
+  margin-top: 15px;
+}
+form {
+  background: rgba(27, 27, 50, 0.8);
+  padding: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px black;
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid cornflowerblue;
+  color: #495057;
+  font-size: 1rem;
+}
+.form-group .radio,
+.form-group .checkbox {
+  width: auto;
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.form-group input:focus,
+.form-group select:focus {
+  box-shadow: 1px 1px 10px cornflowerblue;
+}
+.form-group input:focus-visible,
+.form-group select:focus-visible {
+  outline: none;
+}
+.form-group span {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+label,
+.form-group p {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #f3f3f3;
+}
+#improve {
+  border: none;
+}
+button {
+  width: 100%;
+  background-color: rgb(43, 184, 97);
+  color: #f3f3f3;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #2bb861;;
+}
