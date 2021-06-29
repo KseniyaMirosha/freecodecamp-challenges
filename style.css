@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  cursor: default;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+.page-wrapper {
+  background-color: #eee;
+}
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  align-items: center;
+  background-color: #eee;
+}
+header .image {
+  max-width: 60%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul .nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: darkslategrey;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+
+nav ul .nav-link:hover {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: gold;
+  color: black;
+  box-shadow: 0px 0px 10px goldenrod;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.top-title {
+  padding-top: 100px;
+  text-align: center;
+}
+.top-title h2 {
+  margin-bottom: 20px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+#email {
+  margin-bottom: 15px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 300px;
+  cursor: text;
+}
+#submit {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: none;
+  background-color: #f1c40f;
+  font-weight: 800;
+  border-radius: 3px;
+}
+#submit:hover {
+  background: black;
+  color: gold;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+#features .features-item {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 50px 10px;
+}
+.icon {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 5vw;
+  color: #ff9800;
+}
+.text {
+  max-width: 90%;
+}
+.text h3 {
+  margin-bottom: 10px;
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+#pricing {
+  display: flex;
+  justify-content: space-evenly;
+}
+#pricing .item {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border-radius: 3px;
+}
+#pricing .title {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#pricing p {
+  margin: 15px;
+  font-size: 3vw;
+  font-weight: 800;
+}
+#pricing ul li {
+  margin-bottom: 10px;
+}
+#pricing button {
+  border: none;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 800;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+#pricing button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: gold;
+  transition-duration: 0.3s;
+}
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+footer ul li:not(:last-of-type) {
+  margin-right: 15px;
+}
+footer ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 700;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer p {
+  text-align: end;
+  font-size: 0.8rem;
+}
+
+@media only all and (max-width: 800px) {
+  header .image {
+    max-width: 100%;
+  }
+  nav ul .nav-link {
+    font-size: 16px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  nav ul li {
+    margin: 15px;
+  }
+  #pricing {
+    flex-wrap: wrap;
+  }
+}
+
+@media only all and (max-width: 600px) {
+  header {
+    display: block;
+    padding-top: 30px;
+    position: static;
+  }
+  nav ul {
+    align-items: center;
+  }
+  nav ul .nav-link {
+    font-size: 24px;
+  }
+  .top-title {
+    padding-top: 50px;
+  }
+  #email {
+      width:fit-content;
+  }
+  #pricing {
+      display: block;
+  }
+  #pricing .item {
+      width: auto;
+  }
+  footer ul {
+      justify-content: center;
+  }
+  footer p {
+      text-align: center;
+  }
+}
